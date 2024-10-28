@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-apple-gray text-apple-dark font-sans;
+  }
+}
+
+@layer components {
+  .apple-button {
+    @apply bg-apple-blue text-white font-semibold py-2 px-4 rounded-apple shadow-apple transition-all duration-300 ease-in-out;
+  }
+
+  .apple-button:hover {
+    @apply bg-opacity-90 transform scale-105;
+  }
+
+  .apple-card {
+    @apply bg-white rounded-apple shadow-apple p-6 transition-all duration-300 ease-in-out;
+  }
+
+  .apple-card:hover {
+    @apply shadow-lg transform -translate-y-1;
+  }
+}
